@@ -1,0 +1,35 @@
+/*Variables*/
+$bg-light-purple: #9d59c7;
+$color-dark-purple: #6e53bc;
+$color-list-purple: #c76fe5;
+
+* {
+  margin: 0px;
+  body {
+    background-color: $bg-light-purple;
+    font-family: "Poppins", sans-serif;
+    .container {
+      height: 100vh;
+      border: 1px solid green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container_box {
+        background-color: $color-dark-purple;
+       
+        padding:5%;
+        display: flex;
+        flex-direction: column;
+border-radius: 15px;
+box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+        .box_title {
+          align-self: center;
+          h1 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
