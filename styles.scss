@@ -3,11 +3,26 @@ $bg-light-purple: #9d59c7;
 $color-dark-purple: #6e53bc;
 $color-list-purple: #c76fe5;
 
+@mixin Box_items {
+  background-color: $bg-light-purple;
+  border-radius: 15px;
+  margin: 5px;
+}
+@mixin box_styles_borders {
+  border: none;
+  margin: 3px;
+            border-radius: 5px;
+            padding: 7px;
+            font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0px;
+
   body {
     background-color: $bg-light-purple;
     font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
     .container {
       height: 100vh;
       border: 1px solid green;
@@ -16,18 +31,38 @@ $color-list-purple: #c76fe5;
       align-items: center;
 
       .container_box {
+        max-width: 500px;
         background-color: $color-dark-purple;
-       
-        padding:5%;
+
+        padding: 5%;
         display: flex;
         flex-direction: column;
-border-radius: 15px;
-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+
+        border-radius: 15px;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
         .box_title {
           align-self: center;
           h1 {
             color: white;
           }
+        }
+        .box_filter {
+          input[type=text]{
+            @include box_styles_borders();
+          }
+          input[type=submit]{
+            @include box_styles_borders();
+            padding: 5px;
+          }
+          .custom_select {
+            background-color: red; 
+            width: auto;
+          }
+          
+        }
+
+        .box_list_Compras {
+          @include Box_items();
         }
       }
     }
