@@ -49,30 +49,87 @@
   color: white;
 }
 
-* body .container .container_box .box_filter input[type=text] {
+* body .container .container_box .box_filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+* body .container .container_box .box_filter input[type="text"] {
+  width: 100%;
   border: none;
   margin: 3px;
   border-radius: 5px;
   padding: 7px;
   font-family: "Poppins", sans-serif;
+  background-color: #9d59c7;
 }
 
-* body .container .container_box .box_filter input[type=submit] {
+* body .container .container_box .box_filter input[type="text"]::-webkit-input-placeholder {
+  color: white;
+}
+
+* body .container .container_box .box_filter input[type="text"]:-ms-input-placeholder {
+  color: white;
+}
+
+* body .container .container_box .box_filter input[type="text"]::-ms-input-placeholder {
+  color: white;
+}
+
+* body .container .container_box .box_filter input[type="text"]::placeholder {
+  color: white;
+}
+
+* body .container .container_box .box_filter label {
+  margin: 5px;
+}
+
+* body .container .container_box .box_filter input[type="submit"] {
   border: none;
   margin: 3px;
   border-radius: 5px;
   padding: 7px;
   font-family: "Poppins", sans-serif;
   padding: 5px;
+  margin: 5px;
+  background-color: #9d59c7;
 }
 
 * body .container .container_box .box_filter .custom_select {
-  background-color: red;
-  width: auto;
+  margin: 5px;
+  width: 50%;
 }
 
-* body .container .container_box .box_list_Compras {
+* body .container .container_box .box_filter .custom_select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #c76fe5;
+}
+
+* body .container .container_box .box_filter .custom_select select option {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+}
+
+* body .container .container_box .box_list_Compras, * body .container .container_box .box_list_Uni, * body .container .container_box .box_list_Gastos {
   background-color: #9d59c7;
   border-radius: 15px;
   margin: 5px;
+}
+
+* body .container .container_box .box_list_Compras i, * body .container .container_box .box_list_Uni i, * body .container .container_box .box_list_Gastos i {
+  margin: 10px;
 }
