@@ -18,6 +18,7 @@ $color-list-purple: #c76fe5;
 
 * {
   margin: 0px;
+  box-sizing: border-box;
 
   body {
     background-color: $bg-light-purple;
@@ -25,16 +26,18 @@ $color-list-purple: #c76fe5;
     font-size: 1.2em;
     .container {
       height: 100vh;
-      border: 1px solid green;
+
       display: flex;
       justify-content: center;
       align-items: center;
 
       .container_box {
+        margin: auto;
+
         max-width: 500px;
         background-color: $color-dark-purple;
 
-        padding: 5%;
+        padding: 3%;
         display: flex;
         flex-direction: column;
 
@@ -86,10 +89,9 @@ $color-list-purple: #c76fe5;
           }
         }
 
-        .box_list_Compras, .box_list_Uni, .box_list_Gastos {
-
-
-
+        .box_list_Compras,
+        .box_list_Uni,
+        .box_list_Gastos {
           @include Box_items();
           i {
             margin: 10px;
@@ -98,4 +100,24 @@ $color-list-purple: #c76fe5;
       }
     }
   }
+}
+
+
+//MEDIA QUERIES
+@media (max-width:500px) {
+body {
+  .container{
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+     div > form > div.box_filter > input[type=submit]:nth-child(4) {
+       width: 100%;
+     }
+     h3 {
+       font-size: 1.07em;
+     }
+    
+  }
+}
 }

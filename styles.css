@@ -1,6 +1,8 @@
 /*Variables*/
 * {
   margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * body {
@@ -11,7 +13,6 @@
 
 * body .container {
   height: 100vh;
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,9 +25,10 @@
 }
 
 * body .container .container_box {
+  margin: auto;
   max-width: 500px;
   background-color: #6e53bc;
-  padding: 5%;
+  padding: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,12 +126,31 @@
   padding: 3px;
 }
 
-* body .container .container_box .box_list_Compras, * body .container .container_box .box_list_Uni, * body .container .container_box .box_list_Gastos {
+* body .container .container_box .box_list_Compras,
+* body .container .container_box .box_list_Uni,
+* body .container .container_box .box_list_Gastos {
   background-color: #9d59c7;
   border-radius: 15px;
   margin: 5px;
 }
 
-* body .container .container_box .box_list_Compras i, * body .container .container_box .box_list_Uni i, * body .container .container_box .box_list_Gastos i {
+* body .container .container_box .box_list_Compras i,
+* body .container .container_box .box_list_Uni i,
+* body .container .container_box .box_list_Gastos i {
   margin: 10px;
+}
+
+@media (max-width: 500px) {
+  body .container {
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  body .container div > form > div.box_filter > input[type=submit]:nth-child(4) {
+    width: 100%;
+  }
+  body .container h3 {
+    font-size: 1.07em;
+  }
 }
