@@ -20,7 +20,7 @@
           <h1>To Do List</h1>
         </div>
         <!--informacion de la tarea y filtros-->
-        <form onsubmit="AñadirInfoForm(event)" action="">
+        <form name="formul" onsubmit="AñadirInfoForm(event)" action="">
         <div class="box_filter">
           <input
             type="text"
@@ -31,11 +31,11 @@
           />
           <label for="">Categorias</label>
           <div class="custom_select">
-            <select name="" id="">
+            <select name="mySelect" id="">
               Categoria
-              <option value="Compras">Compras</option>
-              <option value="Universidad">Universidad</option>
-              <option value="Gastos">Gastos</option>
+              <option value="box_list_Compras">Compras</option>
+              <option value="box_list_Uni">Universidad</option>
+              <option value="box_list_Gastos">Gastos</option>
             </select>
           </div>
           <input type="submit" class="BotonEnviar" value="Enviar" />
@@ -47,27 +47,21 @@
         <div class="box_list_Compras" >
           <h3>Clase<i class="fas fa-money-bill-alt"></i></h3>
           <ul id="box_list_Compras">
-            
-            <li>Tarea de Fisica</li>
-            <li>Programar Lista de Tareas</li>
+          
           </ul>
         </div>
 
         <div class="box_list_Uni">
           <h3>Universidad<i class="fas fa-graduation-cap"></i></h3>
-          <ul>
-            
-            <li>Pagar Cuotas</li>
-            <li>Ir al Campus</li>
+          <ul id="box_list_Uni">
+          
           </ul>
         </div>
 
         <div class="box_list_Gastos">
           <h3>Gastos<i class="fas fa-file-invoice"></i></h3>
-          <ul>
-           
-            <li>Ir al banco</li>
-            <li>Pagar Expensas</li>
+          <ul id="box_list_Gastos">
+     
           </ul>
         </div>
       </div>
