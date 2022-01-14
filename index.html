@@ -21,50 +21,49 @@
         </div>
         <!--informacion de la tarea y filtros-->
         <form name="formul" onsubmit="AñadirInfoForm(event)" action="">
-        <div class="box_filter">
-          <input
-            type="text"
-            name="textArea"
-            id="textoAreita"
-            placeholder="Put your Task here"
-            class="text_putter"
-          />
-          <label for="">Categorias</label>
-          <div class="custom_select">
-            <select name="mySelect" id="">
-              Categoria
-              <option value="box_list_Compras">Compras</option>
-              <option value="box_list_Uni">Universidad</option>
-              <option value="box_list_Gastos">Gastos</option>
-            </select>
+          <div class="box_filter">
+            <input
+              type="text"
+              name="textArea"
+              id="textoAreita"
+              placeholder="Put your Task here"
+              class="text_putter"
+            />
+            <label for="">Categorias</label>
+            <div class="custom_select">
+              <select name="mySelect" id="">
+                Categoria
+                <option value="box_list_Compras">Compras</option>
+                <option value="box_list_Uni">Universidad</option>
+                <option value="box_list_Gastos">Gastos</option>
+              </select>
+            </div>
+            <input type="submit" class="BotonEnviar" value="Enviar" />
+            <input type="button" onclick="location.reload();" value="Limpiar" class="actualizarPagina" />
+           
           </div>
-          <input type="submit" class="BotonEnviar" value="Enviar" />
-        </div>
-      </form>
+          
+        </form>
 
         <!--Lista de Tareas-->
-<div class ="TareasContenedor">
-        <div class="box_list_Compras" >
-          <h3>Clase<i class="fas fa-money-bill-alt"></i></h3>
-          <ul id="box_list_Compras">
-          
-          </ul>
-        </div>
+        <div class="TareasContenedor">
+          <div class="box_list_Compras">
+            <h3>Compras<i class="fas fa-money-bill-alt"></i></h3>
+            <ul id="box_list_Compras">
+              
+            </ul>
+          </div>
 
-        <div class="box_list_Uni">
-          <h3>Universidad<i class="fas fa-graduation-cap"></i></h3>
-          <ul id="box_list_Uni">
-          
-          </ul>
-        </div>
+          <div class="box_list_Uni">
+            <h3>Universidad<i class="fas fa-graduation-cap"></i></h3>
+            <ul id="box_list_Uni"></ul>
+          </div>
 
-        <div class="box_list_Gastos">
-          <h3>Gastos<i class="fas fa-file-invoice"></i></h3>
-          <ul id="box_list_Gastos">
-     
-          </ul>
+          <div class="box_list_Gastos">
+            <h3>Gastos<i class="fas fa-file-invoice"></i></h3>
+            <ul id="box_list_Gastos"></ul>
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <script

@@ -64,11 +64,13 @@ $color-list-purple: #c76fe5;
           label {
             margin: 5px;
           }
-          input[type="submit"] {
+          input.BotonEnviar, input.actualizarPagina
+           {
             @include box_styles_borders();
             padding: 5px;
             margin: 5px;
-            background-color: $bg-light-purple;
+            background-color: $color-list-purple;
+            
           }
           .custom_select {
             margin: 5px;
@@ -96,13 +98,15 @@ $color-list-purple: #c76fe5;
           i {
             margin: 10px;
           }
-     
+          #box_list_Compras > li {
+            
+          }
         
         }
       }
     }
   }
-}
+
 
 
 //MEDIA QUERIES
@@ -122,4 +126,4 @@ body {
     
   }
 }
-}
+}}

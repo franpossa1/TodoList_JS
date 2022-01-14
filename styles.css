@@ -91,7 +91,7 @@
   margin: 5px;
 }
 
-* body .container .container_box .box_filter input[type="submit"] {
+* body .container .container_box .box_filter input.BotonEnviar, * body .container .container_box .box_filter input.actualizarPagina {
   border: none;
   margin: 3px;
   border-radius: 5px;
@@ -99,7 +99,7 @@
   font-family: "Poppins", sans-serif;
   padding: 5px;
   margin: 5px;
-  background-color: #9d59c7;
+  background-color: #c76fe5;
 }
 
 * body .container .container_box .box_filter .custom_select {
@@ -141,16 +141,16 @@
 }
 
 @media (max-width: 500px) {
-  body .container {
+  * body .container {
     width: 90%;
     margin: auto;
     font-size: 1rem;
     font-weight: 400;
   }
-  body .container div > form > div.box_filter > input[type=submit]:nth-child(4) {
+  * body .container div > form > div.box_filter > input[type=submit]:nth-child(4) {
     width: 100%;
   }
-  body .container h3 {
+  * body .container h3 {
     font-size: 1.07em;
   }
 }
